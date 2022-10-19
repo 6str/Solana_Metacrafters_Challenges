@@ -1,3 +1,7 @@
+:root {
+--background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +26,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* border: 1px solid red; */
+}
+
+.topBar {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  padding: 1rem;
+  /* border: 3px solid green; */
 }
 
 .App-link {
